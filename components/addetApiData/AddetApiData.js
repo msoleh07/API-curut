@@ -32,7 +32,7 @@ function AddetApiData() {
     ) {
       toast.error("err", {
         position: "top-right",
-        autoClose: 5000,
+        autoClose: 1000,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,
@@ -43,21 +43,7 @@ function AddetApiData() {
     }
     axios
       .post(Api, addetFormData)
-      .then((res) => {
-        console.log(res);
-        if (res.status === 201) {
-          toast.success(res.status, {
-            position: "top-center",
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: "dark",
-          });
-        }
-      })
+      .then((res) => res.status === 201 && window.location.reload())
       .catch((err) =>
         toast.error(err, {
           position: "top-right",
