@@ -1,0 +1,158 @@
+.all_api_data_page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 50px 3%;
+}
+
+.all_api_data_page table {
+  width: 100%;
+  border: 1px solid #33ee;
+  border-radius: 10px;
+}
+
+.all_api_data_page table thead {
+  width: 100%;
+  height: 40px;
+}
+
+.all_api_data_page table thead tr th {
+  border: 1px solid #55ee;
+  border-radius: 5px;
+  border-bottom: 1px solid #000;
+  color: #33ee;
+}
+
+.all_api_data_page table thead tr th:nth-child(odd) {
+  color: #39ee;
+  border-bottom: 1px solid #19e920;
+}
+
+.all_api_data_page table tbody {
+  width: 100%;
+}
+
+.all_api_data_page table tbody tr {
+  height: 40px;
+}
+
+.all_api_data_page table tbody tr td {
+  border: 1px solid #000;
+  border-bottom: 1px solid #33ee;
+  border-radius: 5px;
+  padding: 0 5px;
+}
+
+.all_api_data_page table tbody tr td:nth-child(odd) {
+  border-bottom: 1px solid #19e920;
+}
+
+.all_api_data_page table tbody tr td:nth-child(1) {
+  text-align: center;
+  color: #e919e2;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.all_api_data_page table tbody tr td button {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+}
+
+.all_api_data_page table tbody tr td button svg {
+  cursor: pointer;
+  font-size: 19px;
+  color: #192ae9;
+}
+
+.all_api_data_page table tbody tr td button svg:hover {
+  color: #e919e2;
+}
+
+.all_api_data_page table tbody tr td button .table_edit:hover {
+  color: #19e920;
+}
+
+/* adit code */
+
+.adit_form_page {
+  width: 100%;
+  height: 100vh;
+  backdrop-filter: blur(7px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.adit_form_page form {
+  width: 290px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  gap: 10px;
+  padding: 30px 20px;
+  border-radius: 10px;
+  background: #e5f9fd;
+}
+
+.adit_form_page form .form_text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #000;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.adit_form_page form .form_text h2 {
+  letter-spacing: 3px;
+  color: #ee0099;
+}
+
+.form_text .form_close {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form_text .form_close button {
+  border: none;
+  background: transparent;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.form_text .form_close button svg {
+  font-size: 25px;
+}
+
+.adit_form_page form input {
+  border-radius: 5px;
+  border: none;
+  border-bottom: 1px solid #33ee;
+  text-indent: 10px;
+  font-size: 16px;
+  height: 30px;
+  outline: none;
+}
+
+.adit_form_page form button {
+  height: 35px;
+  border-radius: 10px;
+  border: none;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #33ee;
+  font-size: 16px;
+  color: #ee0099;
+  cursor: pointer;
+  background: transparent;
+  margin-top: 20px;
+}
