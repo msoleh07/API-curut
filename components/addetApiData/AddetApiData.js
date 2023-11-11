@@ -24,10 +24,10 @@ function AddetApiData() {
     };
 
     if (
-      addetFormData.lestName.length === 0 &&
-      addetFormData.firsName.length === 0 &&
-      addetFormData.email.length === 0 &&
-      addetFormData.location.length === 0 &&
+      addetFormData.lestName.length === 0 ||
+      addetFormData.firsName.length === 0 ||
+      addetFormData.email.length === 0 ||
+      addetFormData.location.length === 0 ||
       addetFormData.phoneNumber.length === 0
     ) {
       toast.error("err", {

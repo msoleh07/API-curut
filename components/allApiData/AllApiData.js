@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import axios from "axios";
 import "./AllApiData.css";
 import { IoTrash, IoCloseCircleSharp } from "react-icons/io5";
@@ -34,22 +34,10 @@ function AllApiData() {
     axios
       .delete(Api + "/" + id)
       .then((res) => res.statusText === "OK" && window.location.reload())
-      .catch((err) =>
-        toast.error(err, {
-          position: "top-right",
-          autoClose: 1000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-          theme: "light",
-        })
-      );
+      .catch((err) => alert(err));
   };
 
   const openFormCard = (data) => {
-    console.log(data);
     setAdit(!adit);
     setGetData(data.id);
     setLestName(data.lestName);
