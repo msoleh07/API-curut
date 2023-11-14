@@ -4,7 +4,6 @@ import axios from "axios";
 import "./AllApiData.css";
 import { IoTrash, IoCloseCircleSharp } from "react-icons/io5";
 import { AiFillEdit } from "react-icons/ai";
-import { ToastContainer, toast } from "react-toastify";
 
 function AllApiData() {
   const Api = "https://6518503a582f58d62d359404.mockapi.io/form/addit";
@@ -59,7 +58,6 @@ function AllApiData() {
 
   return (
     <div className="all_api_data_page">
-      <ToastContainer />
       <table>
         <thead>
           <tr>
